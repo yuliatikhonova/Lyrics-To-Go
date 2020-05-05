@@ -21,9 +21,13 @@ APIs Used:
 Wire Frame:
 
 ![alt text](https://github.com/yuliatikhonova/Project-1/blob/master/images/Lyrics-to-go-wire-desktop.png)
+![alt text](https://github.com/yuliatikhonova/Project-1/blob/master/images/lyrics-to-go-mobile-wire.png)
 
 Tasks:
 
+    - CSS and HTML basic structure: Joey
+    - Java Script structure and Project Manager: Yulia
+    - 
     
 
 
