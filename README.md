@@ -20,7 +20,7 @@ APIs Used:
     
 Wire Frame:
 
-
+    ![alt text](https://github.com/yuliatikhonova/Project-1/blob/master/images/Lyrics-to-go-wire-desktop.png)
 
 Tasks:
 
