@@ -6,9 +6,7 @@ Project title:
 
 Project description: 
 
-    The intendent function of this app, when the user inputs a song title, the app returnas album art work and lyrics. 
-    GIVEN the option i can input a song name
-    WHEN I search im presented with album art and lyrics
+    The intended function of this app is when the user inputs a song title, the app returns the user's desired album artwork and lyrics that were searched for.
 
 User Story:
 
@@ -27,7 +25,8 @@ Tasks:
 
     - CSS and HTML basic structure: Joey
     - Java Script structure and Project Manager: Yulia
-    - 
+    - Lyric API research: Kaelyn
+    - Album API research: Jerry
     
 
 
