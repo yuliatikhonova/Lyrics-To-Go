@@ -16,10 +16,11 @@ User Story:
 
 APIs Used:
 
-    Lyric API and Album cove API
+    Lyric API and Album cover API
     
 Wire Frame:
 
+    ![lyrics-to-go-mobile-wire](https://user-images.githubusercontent.com/62128411/81033480-b09ba000-8e48-11ea-908e-ce97fbcf8afe.png)
 
 
 Tasks:
