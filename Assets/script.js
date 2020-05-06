@@ -1,7 +1,7 @@
 //---------------------------Variables------------------------
 
 var lyricAPIKey = ''; //key for the lyric API
-var queryLyricURL = '' + lyricAPIKey; //complete url for lyric API
+var queryLyricURL = 'https://api.lyrics.ovh/v1/artist/title' + lyricAPIKey; //complete url for lyric API
 console.log(); //test if the url and key are working
 
 var artAPIKey = ''; //key for the album art API
