@@ -42,3 +42,13 @@ input {
     font-style: normal;
     font-size: 20px;
 }
+
+.main-area {
+    background: url("../images/landing-image.svg") no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+    text-align: center;
+}
+main {
+    padding-top: 40px;
+}
