@@ -24,6 +24,12 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
         }).then(function (response) {
             console.log(response); //testing the response
 
+           var results = response; 
+        
+           var lyrics = $("<p>");
+           lyrics.text(results.lyrics);
+           $(".main-area").append(lyrics);
+
         });
 
         $.ajax({
