@@ -26,11 +26,11 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
 
         });
 
-        $.ajax({ //calling data from the album art api
-            url: queryArtURL,
-            method: "GET"
+        $.ajax({
+            url: 'http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=05491a370a54ea7716568aaa45951396&artist=Prince&album=1999&format=json',
+            method: 'GET'
         }).then(function (response) {
-            console.log(response); //testing the response
+            console.log(response);
 
         });
     });
