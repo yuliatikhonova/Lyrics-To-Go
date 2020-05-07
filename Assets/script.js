@@ -2,11 +2,10 @@
 
 var lyricAPIKey = ''; //key for the lyric API
 var queryLyricURL = 'https://api.lyrics.ovh/v1/artist/title' + lyricAPIKey; //complete url for lyric API
-console.log(); //test if the url and key are working
+
 
 var artAPIKey = ''; //key for the album art API
 var queryArtURL = '' + artAPIKey; //complete url for album art API
-console.log(); //test if the url and key are working
 
 var searchBtn = $('#'); //Link the id for the search button
 var searchInput = $('#').val(); //Link the id for the input that the user typed in
