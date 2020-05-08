@@ -23,21 +23,29 @@
 
 <body>
     <!--header-->
-    <div class="containter">
+    <div class="container-fluid">
         <header>
-            <div class="top">
+            <div class="top white">
                 <a href="./index.html"><img src="./images/logo-black.svg" alt="logo for lyrics to go" id="top-logo"></a>
             </div>
 
         </header>
-        <div class="main-area">
+        <main class="main-area p-3 container">
             <!--MAIN-->
-            <main>
-                <button id="search" type="button">search</button> <input>
-            </main>
-        </div>
+            <div class="md-form input-group white">
+                <div class="input-group-prepend">
+                    <span class="input-group-text md-addon">artist & song title</span>
+                </div>
+                <input type="text" aria-label="artist" class="form-control" placeholder="i.e terror jr">
+                <input type="text" aria-label="song title" class="form-control" placeholder="i.e 3 strikes">
+                <div class="input-group-append">
+                    <button class="btn btn-md m-0 px-3 btn-dark" type="button"
+                        id="MaterialButton-addon2">search</button>
+                </div>
+            </div>
+        </main>
         <!--FOOTER-->
-        <footer>
+        <footer class="page-footer font-small">
             <div class="bottom">
                 <a href="./index.html"><img src="./images/logo-black.svg" alt="logo for lyrics to go"
                         id="bottom-logo"></a>

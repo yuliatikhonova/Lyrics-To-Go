@@ -1,0 +1,42 @@
+@mixin font-stack {
+    font-family: hero-new, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+body {
+    @include font-stack;  
+    margin: 0px;
+    height: 100vh;
+}
+
+#top-logo {
+    width: 80px;
+}
+
+.top, .bottom {
+    text-align: center;
+}
+
+
+#bottom-logo {
+    width: 60px;
+}
+
+.container-fluid{
+    background: url("../images/landing-image.svg") no-repeat;
+    background-size: 125%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.main-area {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+main {
+    padding-top: 40px;
+}

@@ -1,54 +1,39 @@
 body {
-    font-family: hero-new, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    margin: 0px;
+  font-family: hero-new, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0px;
+  height: 100vh;
 }
 
 #top-logo {
-    width: 80px;
+  width: 80px;
 }
 
-.top {
-    text-align: center;
+.top, .bottom {
+  text-align: center;
 }
 
 #bottom-logo {
-    width: 60px;
+  width: 60px;
 }
 
-.bottom {
-    text-align: center;
-}
-
-#search {
-    background-color: black;
-    color: white;
-    font-family: hero-new, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30px;
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
-}
-
-input {
-    height: 50px;
-    width: 400px;
-    border: 1px solid black;
-    font-family: hero-new, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 20px;
+.container-fluid {
+  background: url("../images/landing-image.svg") no-repeat;
+  background-size: 125%;
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .main-area {
-    background: url("../images/landing-image.svg") no-repeat;
-    background-size: cover;
-    min-height: 1000px;
-    text-align: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
 }
+
 main {
-    padding-top: 40px;
+  padding-top: 40px;
 }
+
+/*# sourceMappingURL=style.css.map */
