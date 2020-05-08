@@ -1,7 +1,9 @@
 //---------------------------Variables------------------------
 
-var lyricAPIKey = ''; //key for the lyric API
-var queryLyricURL = '' + lyricAPIKey; //complete url for lyric API
+var queryLyricURL = 'https://api.lyrics.ovh/v1/' + artist + '/' + title; //complete url for lyric API
+var artist = $(#).value;
+var title = $(#).value;
+
 
 var artAPIKey = ''; //key for the album art API
 var queryArtURL = '' + artAPIKey; //complete url for album art API
@@ -22,13 +24,19 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
         }).then(function (response) {
             console.log(response); //testing the response
 
+           var results = response; 
+        
+           var lyrics = $("<p>");
+           lyrics.text(results.lyrics);
+           $(".main-area").append(lyrics);
+
         });
 
-        $.ajax({ //calling data from the album art api
-            url: queryArtURL,
-            method: "GET"
+        $.ajax({
+            url: 'http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=05491a370a54ea7716568aaa45951396&artist=Prince&album=1999&format=json',
+            method: 'GET'
         }).then(function (response) {
-            console.log(response); //testing the response
+            console.log(response);
 
         });
     });
