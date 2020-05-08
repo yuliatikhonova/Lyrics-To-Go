@@ -8,6 +8,7 @@ body {
 
 #top-logo {
   width: 80px;
+  padding-top: 25px;
 }
 
 .top, .bottom {
@@ -28,12 +29,17 @@ body {
 
 .main-area {
   text-align: center;
-  height: 100%;
   width: 100%;
 }
 
 main {
   padding-top: 40px;
+}
+
+.search-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
