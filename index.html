@@ -23,7 +23,7 @@
 
 <body>
     <!--header-->
-    <div class="container-fluid">
+    <div class="container-fluid main-search-background">
         <header class="top white">
             <div>
                 <a href="./index.html"><img src="./images/logo-black.png" alt="logo for lyrics to go" id="top-logo"></a>
@@ -38,14 +38,20 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text md-addon">artist & song title</span>
                         </div>
-                        <input type="text" aria-label="artist" id='artist' class="form-control" placeholder="artist here">
-                        <input type="text" aria-label="song title" id='title'  class="form-control" placeholder="song title">
+                        <input type="text" aria-label="artist" id='artist' class="form-control"
+                            placeholder="artist here">
+                        <input type="text" aria-label="song title" id='title' class="form-control"
+                            placeholder="song title">
                         <div class="input-group-append">
                             <button class="btn btn-md m-0 px-3 btn-dark" type="button"
                                 id="MaterialButton-addon2">search</button>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <div id="album-art" class="col-6"></div>
+                <div id="lyrics" class="col-6"></div>
             </div>
 
         </main>
