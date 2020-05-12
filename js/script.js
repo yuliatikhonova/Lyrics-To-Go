@@ -27,20 +27,31 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
             method: 'GET'
         }).then(function (response) {
             console.log(response);
+            if (response.message == 'Album not found' || response.album.image[4]['#text'] == '') {
+
+                $('#album-art').append('<p>' + 'Album art not found' + '</p>')
+            }
             var artWork = $('<img>');
             artWork.attr('src', response.album.image[4]['#text']);
             $('#album-art').append(artWork);
-
-            $.ajax({ //calling data from the Lyric api
-                url: queryLyricURL,
-                method: "GET"
-            }).then(function (response) {
-                console.log(response); //testing the response
-                $('#lyrics').css('display', 'block');
-                var lyrics = $('<p>').text(response.lyrics);
-                $('#lyrics').append(lyrics);
-
-            });
+        }).catch(function () {
+            $('#album-art').append('<p>' + 'Album art not found' + '</p>')
+        });
+        $.ajax({ //calling data from the Lyric api
+            url: queryLyricURL,
+            method: "GET"
+        }).then(function (response) {
+            console.log(response); //testing the response
+            if (response == '') {
+                $('#lyrics').append('<p>' + 'Song lyrics not found' + '</p>')
+            }
+            $('#lyrics').css('display', 'block');
+            var lyrics = $('<p>').text(response.lyrics);
+            $('#lyrics').append(lyrics);
+        }).catch(function () {
+            console.log('err')
+            $('#lyrics').append('<p>' + 'Song lyrics not found' + '</p>');
+            $('#lyrics').css('display', 'block');
         });
     });
 
