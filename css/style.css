@@ -43,7 +43,7 @@ main {
 }
 
 #lyrics {
-  overflow: scroll;
+  overflow: auto;
   height: 300px;
   display: none;
 }
