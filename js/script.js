@@ -27,16 +27,16 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
             method: 'GET'
         }).then(function (response) {
             console.log(response);
-            if (response.message == 'Album not found' || response.album.image[4]['#text'] == '') {
-
-                $('#album-art').append('<p>' + 'Album art not found' + '</p>')
-            }
+            //if (response.message == 'Album not found' || response.album.image[4]['#text'] == '') {
+               // $('#album-art').append('<p>' + 'Album art not found' + '</p>')
+            //}
             var artWork = $('<img>');
             artWork.attr('src', response.album.image[4]['#text']);
             $('#album-art').append(artWork);
         }).catch(function () {
             $('#album-art').append('<p>' + 'Album art not found' + '</p>')
         });
+        
         $.ajax({ //calling data from the Lyric api
             url: queryLyricURL,
             method: "GET"
