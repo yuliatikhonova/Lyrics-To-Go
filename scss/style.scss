@@ -46,7 +46,7 @@ main {
     align-items: center;
 }
 #lyrics {
-    overflow: scroll;
+    overflow: auto;
     height: 300px;
     display: none;
 }
