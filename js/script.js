@@ -35,14 +35,16 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
             artWork.attr('src', response.album.image[4]['#text']);
             $('#album-art').append(artWork);
         }).catch(function () {
-            $('#album-art').append('<p>' + 'Album art not found' + '</p>')
+            // $('#album-art').append('<p>' + 'Album art not found' + '</p>');
+            // $('<img class="error">');
+            // $('.error').attr('src', './images/error.svg');
         });
         $.ajax({ //calling data from the Lyric api
             url: queryLyricURL,
             method: "GET"
         }).then(function (response) {
             console.log(response); //testing the response
-            if (response == '') {
+            if (response === '') {
                 $('#lyrics').append('<p>' + 'Song lyrics not found' + '</p>')
             }
             $('#lyrics').css('display', 'block');
