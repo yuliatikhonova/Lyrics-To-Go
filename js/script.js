@@ -3,9 +3,9 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
     var searchBtn = $('#MaterialButton-addon2'); //Link the id for the search button
 
     $(searchBtn).on('click', function () {//when clicked on the button run this functions
-                  
-            $("#album-art").empty();
-            $("#lyrics").empty();
+
+        $("#album-art").empty();
+        $("#lyrics").empty();
 
         var contFluid = document.querySelector('.container-fluid')
         contFluid.setAttribute('class', 'container-fluid')
@@ -14,7 +14,7 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
         //console.log(artist);
         var title = $('#title').val();
         //console.log(title);
-        
+
         $('#artist').val("");
         $('#title').val("");
 
@@ -36,6 +36,7 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
                 method: "GET"
             }).then(function (response) {
                 console.log(response); //testing the response
+                $('#lyrics').css('display', 'block');
                 var lyrics = $('<p>').text(response.lyrics);
                 $('#lyrics').append(lyrics);
 

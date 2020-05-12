@@ -26,7 +26,7 @@ body {
     width: 60px;
 }
 
-.container-fluid{
+.main-search-background{
     background: url("../images/landing-image.svg") no-repeat;
     background-size: 125%;
     height: 100%;
@@ -44,4 +44,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#lyrics {
+    overflow: scroll;
+    height: 300px;
+    display: none;
+}
+@media screen and(max-width: 425px){
+    .main-search-background{
+        background: url("../images/mobile-image.svg") no-repeat;
+        background-size: 100%;
+            }
+            .input-group > .form-control {
+                flex: 0 1 auto;
+            }
 }
