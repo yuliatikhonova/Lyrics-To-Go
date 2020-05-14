@@ -28,7 +28,7 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
         }).then(function (response) {
             console.log(response);
             //if (response.message == 'Album not found' || response.album.image[4]['#text'] == '') {
-               // $('#album-art').append('<p>' + 'Album art not found' + '</p>')
+            // $('#album-art').append('<p>' + 'Album art not found' + '</p>')
             //}
             var artWork = $('<img>');
             artWork.attr('src', response.album.image[4]['#text']);
@@ -38,17 +38,20 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
             // $('<img class="error">');
             // $('.error').attr('src', './images/error.svg');
         });
-        
+
         $.ajax({ //calling data from the Lyric api
             url: queryLyricURL,
             method: "GET"
         }).then(function (response) {
-            console.log(response); //testing the response
+            //console.log(response); //testing the response
+            console.log(response.lyrics.indexOf('\n'));
             if (response === '') {
                 $('#lyrics').append('<p>' + 'Song lyrics not found' + '</p>')
             }
             $('#lyrics').css('display', 'block');
-            var lyrics = $('<p>').text(response.lyrics);
+            //formating text for lyrics display
+            var lyricsResponse = response.lyrics.replace(/\r?\n/g, '<br/>');
+            var lyrics = $('<p>').html(lyricsResponse);
             $('#lyrics').append(lyrics);
         }).catch(function () {
             console.log('err')
