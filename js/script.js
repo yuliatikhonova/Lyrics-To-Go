@@ -19,7 +19,7 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
         $('#title').val("");
 
         var artAPIKey = '05491a370a54ea7716568aaa45951396'; //key for the album art API
-        var queryArtURL = 'http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=' + artAPIKey + '&artist=' + artist + '&album=' + title + '&format=json'; //complete url for album art API
+        var queryArtURL = '//ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=' + artAPIKey + '&artist=' + artist + '&album=' + title + '&format=json'; //complete url for album art API
         var queryLyricURL = 'https://api.lyrics.ovh/v1/' + artist + '/' + title; //complete url for lyric API
 
         $.ajax({
