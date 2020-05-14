@@ -20,3 +20,17 @@ You will be employer-competitive if you are able to:
 * Explain agile software development
 * Design, build, and deploy a client-side web application using GitHub Pages
 * Prepare a professional presentation and repository README for your project
+
+
+### Lyrics to Go
+  excplain apps concept here. 
+
+## Getting Album Artwork
+  The code below checks if their is any error in retreaving information from the api (for the album artwork) and, if the user's input is invaild, by using an 'if' stament and the 'catch' function. If that is the case then the user will see our  error message and image on the page. 
+  
+![](https://github.com/yuliatikhonova/Lyrics-To-Go/blob/master/images/codeSnippit.png)
+
+## Lyrics to Go
+  The gif below shows, that the application finds the lyrics and album artwork the user searched for. 
+
+![](https://github.com/yuliatikhonova/Lyrics-To-Go/blob/master/images/lyrics.gif)
