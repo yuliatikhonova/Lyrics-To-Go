@@ -49,6 +49,7 @@ main {
     overflow: auto;
     height: 300px;
     display: none;
+    text-align: left;
 }
 @media screen and(max-width: 425px){
     .main-search-background{
@@ -57,5 +58,8 @@ main {
             }
             .input-group > .form-control {
                 flex: 0 1 auto;
+            }
+            .input-group-append, #MaterialButton-addon2 {
+                width: 100%;
             }
 }
