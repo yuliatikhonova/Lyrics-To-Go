@@ -27,16 +27,19 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
             method: 'GET'
         }).then(function (response) {
             console.log(response);
-            //if (response.message == 'Album not found' || response.album.image[4]['#text'] == '') {
-            // $('#album-art').append('<p>' + 'Album art not found' + '</p>')
-            //}
+            if (response.message === 'Album not found' || response.album.image[4]['#text'] === '') {
+                $('#album-art').append('<p>' + 'Album art not found' + '</p>')
+                var errorImage = $('<img class="error">');
+                errorImage.attr('src', './images/error.png');
+                $('#album-art').append(errorImage);
+            }
             var artWork = $('<img>');
             artWork.attr('src', response.album.image[4]['#text']);
             $('#album-art').append(artWork);
         }).catch(function () {
-            // $('#album-art').append('<p>' + 'Album art not found' + '</p>');
-            // $('<img class="error">');
-            // $('.error').attr('src', './images/error.svg');
+
+            $('<img class="error">');
+            $('.error').attr('src', './images/error.png');
         });
 
         $.ajax({ //calling data from the Lyric api
