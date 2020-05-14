@@ -1,32 +1,22 @@
-## Proposal
+## Overview
+Welcome to Project 1! This is an important step in your full-stack journey as you will now use your newly acquired skills and knowledge to build web application from scratch. With your team, you will conceive and execute a design that solves a real-world problem by integrating data received from multiple server-side API requests. Because you will be working collaboratively, you will learn agile development methodologies and implement feature and bug fixes using the git branch workflow and pull requests.
 
-Project title: 
+## Key Topics
+* Server-side APIs
+* Git branching workflow
+* Agile software development
 
-    Lyrics To Go
+## Comprehension Check
+You will be employer-ready if you can answer the following questions:
+1. What is agile software development?
+2. What is an MVP?
+3. If you pull down a teammate's branch and you have merge conflicts, how do you handle it?
 
-Project description: 
-
-    The intended function of this app is when the user inputs a song title, the app returns the user's desired album artwork and lyrics that were searched for.
-
-User Story:
-
-    As a user i want to know the lyrics and album art of a specific song. When i type in the song name the album art and lyrics will be presented. 
-
-APIs Used:
-
-    Lyric API and Album cover API
-    
-Wire Frame:
-
-![alt text](https://github.com/yuliatikhonova/Project-1/blob/master/images/Lyrics-to-go-wire-desktop.png)
-![alt text](https://github.com/yuliatikhonova/Project-1/blob/master/images/lyrics-to-go-mobile-wire.png)
-
-Tasks:
-
-    - CSS and HTML basic structure: Joey
-    - Java Script structure and Project Manager: Yulia
-    - Lyric API research: Kaelyn
-    - Album API research: Jerry
-    
-
-
+## Learning Objectives
+You will be employer-competitive if you are able to:
+* Speak technically about a feature you implemented in your project
+* Explain and execute git branching workflow in a collaborative project
+* Resolve merge conflicts
+* Explain agile software development
+* Design, build, and deploy a client-side web application using GitHub Pages
+* Prepare a professional presentation and repository README for your project
