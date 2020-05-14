@@ -63,5 +63,8 @@ main {
     width: 100%;
   }
 }
+.error {
+  max-width: 200px;
+}
 
 /*# sourceMappingURL=style.css.map */

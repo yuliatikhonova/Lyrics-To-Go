@@ -29,7 +29,7 @@ $(document).ready(function () { //makes sure the html is fully loaded before exe
             console.log(response);
             if (response.message === 'Album not found' || response.album.image[4]['#text'] === '') {
                 $('#album-art').append('<p>' + 'Album art not found' + '</p>')
-                var errorImage = $('<img class="error">');
+                var errorImage = $('<img class="error img-fluid">');
                 errorImage.attr('src', './images/error.png');
                 $('#album-art').append(errorImage);
             }
