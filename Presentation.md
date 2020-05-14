@@ -3,7 +3,19 @@
 
 
 ## Yulia
+Process
 
+Tasks and roles: 
+
+For the tasks and roles we used the kanban board in git hub. (Demo the board). Joey was our main HTML and CSS guy. Jerry and Kaelyn took on the research on each of the apis and how to get the response from them. I took on the role of project manager and the structuring of the javascript file.  
+
+Challenges: 
+
+Finding the right api for our app. The lyric api we got in the first try. For the album one we had to switch it a couple of times till we found one that work. Learning and implementing git. Also making adjustments to our schedule outside the class.
+
+Successes: 
+
+We worked well as a team. Took time outside of class. When we hit a wall, we worked together to get passed it during class. Did a good amount of pare coding.
 
 
 ## Jerry
