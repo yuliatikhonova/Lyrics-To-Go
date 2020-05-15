@@ -12,5 +12,8 @@
 
 ## Lyrics to Go
   The gif below shows, that the application finds the lyrics and album artwork the user searched for. 
+  Deployed Application: https://yuliatikhonova.github.io/Lyrics-To-Go/ 
 
 ![](https://github.com/yuliatikhonova/Lyrics-To-Go/blob/master/images/lyrics.gif)
+
+
